@@ -1,9 +1,5 @@
-# N-Queen Visualiser
+# Queen Visualiser
 
-- The N-Queens puzzle is the problem of placing N chess queens on an N×N chessboard so that no two queens threaten each other. Thus, a solution requires that no two queens share the same row, column, or diagonal.
+The idea is to place queens one by one in different columns, starting from the leftmost column. When we place a queen in a column, we check for clashes with already placed queens. In the current column, if we find a row for which there is no clash, we mark this row and column as part of the solution. If we do not find such a row due to clashes, then we backtrack and return false.
 
-- This algorithm is designed using recursion.
-
-![N-Queen-visualisation](visualisation.gif)
-
-**<p align='center'>You can find the website live <a href="https://nqueen.netlify.app/">here</a></p>**
+This algorithm is designed using recursion.
